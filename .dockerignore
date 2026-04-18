@@ -13,4 +13,18 @@ node_modules
 # Environment files
 .env
 
+# Documentation / release notes (not needed at runtime)
 *.md
+website/
+MANIFEST.in
+LICENSE
+
+# Dev-only UI source trees (built artefacts are embedded in the Python package)
+ui-tui/
+web/
+
+# Tests
+tests/
+
+# Release notes
+RELEASE_*.md
