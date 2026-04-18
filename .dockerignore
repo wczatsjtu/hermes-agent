@@ -3,7 +3,7 @@
 .gitignore
 .gitmodules
 
-# Dependencies
+# Dependencies (rebuilt inside Docker)
 node_modules
 .venv
 
@@ -13,4 +13,25 @@ node_modules
 # Environment files
 .env
 
+# Documentation
 *.md
+docs/
+website/
+
+# Test artefacts
+tests/
+**/__pycache__
+**/*.pyc
+**/*.pyo
+
+# Local dev / editor files
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
